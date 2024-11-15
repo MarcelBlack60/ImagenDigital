@@ -1,0 +1,207 @@
+@charset "utf-8";
+/* CSS Document */
+*{border: 0;
+  margin: 0;
+  padding: 0;}
+
+/*link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Original+Surfer&display=swap" rel="stylesheet"*/
+/*<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Original+Surfer&display=swap" rel="stylesheet">*/
+
+
+#logo1
+{width: 500px;
+ height:200px;
+ float: left;
+ margin-left: 20px;/*    margin-right: 14px;*/
+ margin-top: 5px;}
+    
+#botonera{
+	 width: 540px;
+    height: 200px;
+    float: right;
+    /* margin-left: 14px;*/
+    margin-right: 10px;
+    margin-top: 5px;
+	}
+#botonera ul
+{width: 500px;
+	height: 700px;
+margin-top: 10px} 
+
+#botonera ul li
+{
+    float: left;
+    width: 120px;
+	height: 300px;
+    line-height: 80px;
+    list-style-type: none;
+    text-align: center;
+}
+
+#botonera ul li:hover{
+    background-color: #BDBDBD;
+}
+
+#botonera ul li a{
+    font-family:"Kanit", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 400px;
+    text-align: center;
+}
+
+#botonera ul li a:hover{
+    color: rgba(254,254,254,1.00);
+    text-decoration: underline;
+}
+
+#Centro{width: 1500px;
+height: 560px;
+/*border: solid 2px green;*/
+justify-content: center;}
+
+.casco{ width: 675px;
+    height: 495px;
+    float: left;
+    margin-left: 55px;
+    margin-top: 20px;
+    background-color: rgba(225,225,225,0.80);}
+
+.casco h2{font-family: "Bebas Neue", sans-serif;
+font-size: 35px;
+margin-top: 10px;
+margin-left: 20px;}
+
+.casco h3{font-family: "Bebas Neue", sans-serif;
+font-size: 20px;
+margin-top: 10px;
+margin-left: 20px;}
+
+.casco p{
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+    font-size: 17px;
+    margin-top: 15px;
+    margin-left: 35px;
+    margin-right: 35px;
+    text-align: justify;}
+
+#pie{height: 90px;
+	margin-top:auto; 
+      /*background-color: black*/;
+	background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(91,91,91,1) 12%,rgba(51,51,51,1) 65%,rgba(0,0,0,1) 100%);}
+
+#sociales{width: 800px;
+    height: 100px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;}
+
+#sociales ul
+{width: 500px;
+	height: 80px;
+margin-top: 5px;
+margin-left: 20px;
+/*border: solid 1px red;*/}
+
+#sociales ul li{float: left;
+    width: 120px;
+	height: 80px;
+    line-height: 80px;
+    list-style-type: none;
+    text-align: center;
+/*border: solid 1px yellow;*/}
+
+
+#name{
+    float: right;
+    font-family: "Kanit", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+	color: #FFFFFF;
+margin-top: 40px;
+margin-right: 120px;}
+
+#encabezadotab{width: 1500px;
+/*border: solid 1px, black;*/}
+ 
+/*#ima{width: 500px;
+float: left}*/
+
+
+p{font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+    font-size: 20px;
+    margin-top: 5px;
+    text-align: justify;}
+
+.demoHeaders{margin-top: 20px;}
+
+.cajita{
+    float: right;
+    width: 800px;
+/*border: solid 1px red;*/
+    margin-top: 30px;
+    margin-right: 30px;}
+
+#Centro article {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 950px;
+    max-width: 100%;
+    box-sizing: border-box;
+    /*border: solid 2px red;*/
+	margin-left: 300px;
+	margin-top: 50px;
+}
+
+#Centro label {display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333333;}
+
+#Centro input[type="text"],
+#Centro textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+#Centro textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+#Centro input[type="submit"],
+#Centro input[type="reset"] {
+    width: 48%;
+    padding: 10px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+
+#Centro input[type="submit"] {
+    background-color: #4CAF50; 
+	color: white;}
+
+#Centro input[type="reset"] {
+    background-color: #f44336; 
+    color: white;}
+
+#Centro input[type="submit"]:hover {
+    background-color: #45a049;}
+
+#Centro input[type="reset"]:hover {
+    background-color: #d32f2f;}

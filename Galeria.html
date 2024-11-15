@@ -1,0 +1,408 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>TPFinal-Belletti</title>
+	
+<link href="jquery/jquery-ui.css" rel="stylesheet">
+	
+<link href="estilos.css" rel="stylesheet" type="text/css">
+	
+	
+</head>
+<body>
+	
+<div id="Contenedor">
+	
+<header>
+	<div id="logo1"> 
+	<img src="img/Logo1.svg" alt=""/></div><!--cierra logo1-->
+
+  <div id="botonera">
+	<ul>	  
+	<li><a href="index.html">Home</a></li>
+	<li><a href="Galeria.html">Galeria</a></li>
+	<li><a href="talleres.html">Talleres</a></li>
+	<li><a href="contactos.html">Contacto</a></li>
+    </ul></div><!--cierra botonera-->
+
+	
+  <nav>
+	<!-- #region Jssor Slider Begin -->
+    <!-- Generator: Jssor Slider Maker -->
+    <!-- Source: https://www.jssor.com -->
+    <script src="slider/js/jssor.slider.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jssor_1_slider_init = function() {
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $Idle: 2000,
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 1400;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };
+    </script>
+    <style>
+        /* jssor slider loading skin spin css */
+        .jssorl-009-spin img {
+            animation-name: jssorl-009-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes jssorl-009-spin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+
+        .jssorb052 .i {position:absolute;cursor:pointer;}
+        .jssorb052 .i .b {fill:#000;fill-opacity:0.3;}
+        .jssorb052 .i:hover .b {fill-opacity:.7;}
+        .jssorb052 .iav .b {fill-opacity: 1;}
+        .jssorb052 .i.idn {opacity:.3;}
+
+        .jssora053 {display:block;position:absolute;cursor:pointer;}
+        .jssora053 .a {fill:none;stroke:#fff;stroke-width:640;stroke-miterlimit:10;}
+        .jssora053:hover {opacity:.8;}
+        .jssora053.jssora053dn {opacity:.5;}
+        .jssora053.jssora053ds {opacity:.3;pointer-events:none;}
+    </style>
+    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:380px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="../svg/loading/static-svg/spin.svg" />
+        </div>
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
+            <div>
+				<img src="img/01.jpg" width="980" height="380" alt=""/> 
+<!--<img data-u="image" src="slider/img/gallery/980x380/001.jpg" />-->
+            </div>
+            <div data-p="170.00">
+				<img src="img/02.jpg" width="980" height="380" alt=""/>
+<!--<img data-u="image" src="slider/img/gallery/980x380/002.jpg" />-->
+            </div>
+            <div>
+				<img src="img/03.jpg" width="980" height="380" alt=""/> 
+<!--<img data-u="image" src="slider/img/gallery/980x380/003.jpg" />-->
+            </div>
+            <div>
+				<img src="img/04.jpg" width="980" height="380" alt=""/> 
+<!--<img data-u="image" src="slider/img/gallery/980x380/004.jpg" />-->
+            </div>
+            <div>
+				<img src="img/05.jpg" width="980" height="380" alt=""/> 
+<!--<img data-u="image" src="slider/img/gallery/980x380/005.jpg" />-->
+            </div>
+            <div>
+			   <img src="img/06.jpg" width="980" height="380" alt=""/>
+<!-- <img data-u="image" src="slider/img/gallery/980x380/006.jpg" />-->
+            </div>
+            <div>
+				<img src="img/07.jpg" width="980" height="380" alt=""/> 
+<!--<img data-u="image" src="slider/img/gallery/980x380/007.jpg" />-->
+            </div>
+            
+           <!-- <div style="background-color:#ff7c28;">
+                <div style="position:absolute;top:50px;left:50px;width:450px;height:62px;z-index:0;font-size:16px;color:#000000;line-height:24px;text-align:left;padding:5px;box-sizing:border-box;">Photos in this slider are to demostrate jssor slider,<br />
+                    which are not licensed for any other purpose.
+                </div>-->
+      </div>
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb052" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+            <div data-u="prototype" class="i" style="width:16px;height:16px;">
+                <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                    <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                </svg>
+            </div>
+        </div>
+        <!-- Arrow Navigator -->
+        <div data-u="arrowleft" class="jssora053" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+            <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+            </svg>
+        </div>
+        <div data-u="arrowright" class="jssora053" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+            <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+            </svg>
+        </div>
+  
+    <script type="text/javascript">jssor_1_slider_init();</script>
+    <!-- #endregion Jssor Slider End -->	
+	
+</nav>
+</header>	
+	
+  <div id="Centro">
+	<!-- Tabs -->
+<h2 class="demoHeaders"></h2>
+<div id="tabs">
+	<ul>
+		<li><a href="#tabs-1">Photoshop</a></li>
+		<li><a href="#tabs-2">Illustrator</a></li>
+		<li><a href="#tabs-3">InDesign</a></li>
+		<li><a href="#tabs-4">Gimp</a></li>
+	</ul>
+	
+	<div id="tabs-1">
+	<div id="encabezadotab">
+		
+		<div id="ima"> <img src="img/psd.jpg" width="350" height="213" alt=""/></div>
+					
+		</div><!--cierra encabezadotab-->
+
+		
+<p>En su página oficial, lo primero que leemos sobre Photoshop es “Rediseña la realidad”. Y, a continuación, “Si puedes imaginarlo, puedes hacerlo gracias a Photoshop”. Puede que las aplicaciones móviles y las apps web le hayan quitado algo de protagonismo, pero Adobe Photoshop sigue siendo el rey del retoque fotográfico y es una referencia y un estándar para amateurs y profesionales.
+
+En la actualidad está disponible mediante suscripción, y la familia Photoshop consta de varios programas y aplicaciones móviles y de escritorio, una puesta al día necesaria en los tiempos que corren, donde smartphones y tablets son tan o más potentes que nuestra computadora para procesar imágenes y retocar fotografías.
+
+La historia de Photoshop sigue el patrón de otros grandes productos. Una buena idea que se lleva a cabo en la práctica y da pie a un programa que lo cambiará todo. Una gran empresa que reconoce el talento y decide comprar ese proyecto. Una comunidad que le dará apoyo durante años. Y el resto, lo hemos visto en primera persona si alguna vez has trabajado con Photoshop o has trasteado con él.
+
+Veamos cómo nació esta herramienta de diseño y retoque digital, cómo eran sus primeras versiones y con qué novedades cambió la fotografía digital e hizo posible que cualquiera pudiera retocar imágenes sin meterse en un cuarto oscuro y sin usar tijeras y cinta adhesiva.</p>
+</div>
+
+<div id="tabs-2">
+	
+	<div> <img src="img/AI.jpg" width="250" height="156" alt=""/></div>
+	
+	<p>El Ilustrador es una aplicación que les permite a los usuarios realizar diseños, dibujos y gráficos con la mayor facilidad posible. Además, se pueden crear logotipos y cualquier imagen que desee elaborar.
+
+¿Eres aficionado al diseño o a la ilustración y no sabes cómo hacerlo?, ¿Quieres incursionar en el mundo del diseño digital e ilustrar tus pensamientos, pero ni idea de por dónde comenzar?, o simplemente ¿Tienes mil dudas y no consigues a nadie que te oriente?
+
+
+Aquí te daremos respuesta, por entender a nuestros lectores por este medio, te proporcionamos las herramientas que te guiaran en ilustrar debidamente lo que tienes en mente en formato digital.
+
+Mediante la utilización del Illustrator puedes plasmar de forma creativa las ideas que mentalizas. Esta herramienta permite realizar formas, colores, tipografías y efectos diversos y artísticos.
+
+Cómo ilustrar en este sistema
+Es probable que, durante tu creativa trayectoria, puedes lograr modificar imágenes, pero además debes saber cómo ilustrar en este sistema, con la finalidad de que puedas realizar diseños de composiciones visuales y que sean muy atractivas.
+
+Por esta razón, te sugiero emplear gran cantidad de herramientas que te ofrece este programa y que puedas aprender a dominar sus funciones en conjunto y sus múltiples aplicaciones.
+
+Te presentamos algunos tips que debes conocer y tener en consideración al momento de emplear Adobe Illustrator para diseñar cualquier tipo de ilustración.
+
+diseño de portada curso marketing digital
+Identifica la función de cada herramienta
+Es muy importante para usar este sistema que primero tengas claro para qué sirve cada herramienta y cómo puedes aprovechar su potencial en tus ilustraciones.</p>
+</div>
+	
+<div id="tabs-3">
+	
+	<div> <img src="img/ID.jpg" width="250" height="156" alt=""/></div>
+	
+	<p>El programa informático Adobe InDesign es una aplicación que se utiliza para el diseño editorial tanto en formato digital como físico. Expertos aseguran que se trata del software número uno para diseñar los contenidos de carácter editorial.
+
+Indesign es el programa que generalmente se utiliza para diseñar las páginas y portadas de revistas, periódicos, libros y otros documentos similares. Para ello, ofrece un amplio catálogo de funciones que permiten crear diseños sencillos en blanco y negro hasta otros más complejos con imágenes, diferentes colores, texto y otros elementos multimedia.
+
+En este artículo te mostramos qué es InDesign, para que sirve, así como las funcionalidades más útiles que tiene este programa informático.
+
+Qué es Adobe Indesign y para que sirve. Maquetación realizada con este programa de diseño.
+Imagen: Adobe
+Índice de contenidos
+
+¿Qué es InDesign y para qué sirve?
+¿Qué se puede hacer con el programa InDesign?
+Funcionalidades que incorpora Adobe InDesign
+Publish Online
+Plantillas
+Personalización
+Conclusión
+¿Qué es InDesign y para qué sirve?
+Adobe Indesign es el programa informático número uno del diseño editorial. La aplicación es compatible con los sistemas operativos Windows y MacOS.
+
+Se trata de un software desarrollado por la empresa Adobe Systems y está dirigida a diseñadores, o más bien maquetadores. Nombre por el cual se identifican los profesionales que se dedican al diseño editorial.
+
+¿Qué se puede hacer con el programa InDesign?
+Si te preguntas qué programa sirve para editar revistas la respuesta es Adobe Indesign. Pero esta aplicación no solo es útil para este fin, sino que también es de gran utilidad en cualquier proyecto relacionado con el diseño editorial.
+
+Libros, revistas, periódicos, ebooks y otro tipo de documentos, en formato digital o en físico se diseñan cada día con Adobe InDesign. El programa más utilizado por diseñadores y maquetadores en el diseño editorial.
+
+El programa permite crear diseños sencillos que incluyen solo texto o imágenes, pero además ofrece la posibilidad de incorporar todo tipo de archivos multimedia para enriquecer la información, dependiendo también de las necesidades del diseñador.
+
+De esta forma podrás utilizar textos, imágenes, gráficos, videos y todo tipo de archivos multimedia, puesto que el software admite un gran número de formatos. Esto posibilita la creación de documentos interactivos que son más atractivos para el usuario de internet actual.
+
+Estas son las respuestas que necesitabas para responder a tu pregunta inicial: ¿para qué es Adobe InDesign? Pero, aún no hemos terminado.
+
+La diversidad de formatos no solo se suscribe a los archivos que permite insertar en sus diseños, sino también al tipo de archivo en que puedes exportar el resultado. En este sentido Adobe Indesign te permite exportar contenido en JPG, PNG, Flash (Ya obsoleto) y otros formatos menos comunes.</p>
+</div>
+	
+	<div id="tabs-4">
+		
+		<div> <img src="img/gimp.jpg" width="250" height="156" alt=""/></div>
+				
+<p>En su página oficial, lo primero que leemos sobre Photoshop es “Rediseña la realidad”. Y, a continuación, “Si puedes imaginarlo, puedes hacerlo gracias a Photoshop”. Puede que las aplicaciones móviles y las apps web le hayan quitado algo de protagonismo, pero Adobe Photoshop sigue siendo el rey del retoque fotográfico y es una referencia y un estándar para amateurs y profesionales.
+
+En la actualidad está disponible mediante suscripción, y la familia Photoshop consta de varios programas y aplicaciones móviles y de escritorio, una puesta al día necesaria en los tiempos que corren, donde smartphones y tablets son tan o más potentes que nuestra computadora para procesar imágenes y retocar fotografías.
+
+La historia de Photoshop sigue el patrón de otros grandes productos. Una buena idea que se lleva a cabo en la práctica y da pie a un programa que lo cambiará todo. Una gran empresa que reconoce el talento y decide comprar ese proyecto. Una comunidad que le dará apoyo durante años. Y el resto, lo hemos visto en primera persona si alguna vez has trabajado con Photoshop o has trasteado con él.
+
+Veamos cómo nació esta herramienta de diseño y retoque digital, cómo eran sus primeras versiones y con qué novedades cambió la fotografía digital e hizo posible que cualquiera pudiera retocar imágenes sin meterse en un cuarto oscuro y sin usar tijeras y cinta adhesiva.</p>
+</div>
+  
+</div><!--cierra centro-->
+	
+<div id="pie">
+<div id="sociales">
+	<ul>
+		<li><a href="https://www.google.com/intl/es-419/gmail/about/" target="_blank"><img src="img/mail.svg" alt="" width="150" height="100"/></a></li>
+		<li><a href="https://www.whatsapp.com/?lang=es_LA" target="_blank"><img src="img/Wsapp.svg" alt="" width="80" height="80"/></a></li>
+		<li><a href="https://x.com/?lang=es" target="_blank"><img src="img/Twitter.svg" alt="" width="75" height="75"/></a></li>
+		<li><a href="https://www.instagram.com/?hl=es" target="_blank"><img src="img/IG.svg" alt="" width="75" height="75"/></a></li>
+  </ul></div><!--cierra de sociales-->
+	
+    
+	<div id="name">Marcelo Belletti - TP Final</div><!--cierra name-->
+	
+	</div><!--cierra pie-->
+	
+</div><!--cierre contenedor-->
+	
+<script src="jquery/external/jquery/jquery.js"></script>
+<script src="jquery/jquery-ui.js"></script>
+<script>
+$( "#accordion" ).accordion();
+
+var availableTags = [
+	"ActionScript",
+	"AppleScript",
+	"Asp",
+	"BASIC",
+	"C",
+	"C++",
+	"Clojure",
+	"COBOL",
+	"ColdFusion",
+	"Erlang",
+	"Fortran",
+	"Groovy",
+	"Haskell",
+	"Java",
+	"JavaScript",
+	"Lisp",
+	"Perl",
+	"PHP",
+	"Python",
+	"Ruby",
+	"Scala",
+	"Scheme"
+];
+$( "#autocomplete" ).autocomplete({
+	source: availableTags
+});
+
+$( "#button" ).button();
+$( "#button-icon" ).button({
+	icon: "ui-icon-gear",
+	showLabel: false
+});
+
+$( "#radioset" ).controlgroup();
+
+$( "#controlgroup" ).controlgroup();
+
+$( "#tabs" ).tabs();
+
+$( "#dialog" ).dialog({
+	autoOpen: false,
+	width: 400,
+	buttons: [
+		{
+			text: "Ok",
+			click: function() {
+				$( this ).dialog( "close" );
+			}
+		},
+		{
+			text: "Cancel",
+			click: function() {
+				$( this ).dialog( "close" );
+			}
+		}
+	]
+});
+
+// Link to open the dialog
+$( "#dialog-link" ).click(function( event ) {
+	$( "#dialog" ).dialog( "open" );
+	event.preventDefault();
+});
+
+$( "#datepicker" ).datepicker({
+	inline: true
+});
+
+$( "#slider" ).slider({
+	range: true,
+	values: [ 17, 67 ]
+});
+
+$( "#progressbar" ).progressbar({
+	value: 20
+});
+
+$( "#spinner" ).spinner();
+
+$( "#menu" ).menu();
+
+$( "#tooltip" ).tooltip();
+
+$( "#selectmenu" ).selectmenu();
+
+// Hover states on the static widgets
+$( "#dialog-link, #icons li" ).hover(
+	function() {
+		$( this ).addClass( "ui-state-hover" );
+	},
+	function() {
+		$( this ).removeClass( "ui-state-hover" );
+	}
+);
+</script>
+
+	
+  
+  
+
+</body>
+</html>
